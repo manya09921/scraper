@@ -11,3 +11,4 @@ def should_retry_http(status: int) -> bool:
 def build_run_summary(valid: int, invalid: int, failed: int) -> dict:
     return {'valid_records': valid, 'invalid_records': invalid, 'failed_pages': failed}
 MAX_CATALOGUE_PAGES = 3
+# Verify --inject-fake-url failure isolation so books.json keeps all 60 valid records
