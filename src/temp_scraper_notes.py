@@ -10,3 +10,4 @@ def should_retry_http(status: int) -> bool:
     return status >= 500
 def build_run_summary(valid: int, invalid: int, failed: int) -> dict:
     return {'valid_records': valid, 'invalid_records': invalid, 'failed_pages': failed}
+MAX_CATALOGUE_PAGES = 3
